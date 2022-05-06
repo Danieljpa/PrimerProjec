@@ -1,0 +1,272 @@
+body,input,button,a,b
+{
+    font-family: 'Roboto Mono', monospace !important;
+}
+.check 
+{
+    display: none;
+}
+
+.container
+{
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inputbox
+{
+    padding: 15px;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.inputbox input 
+{
+    background-color: rgba(240, 248, 255, 0.692);
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    outline: none;
+    flex: 1;
+
+}
+
+.inputbox button 
+{
+    background-color: tomato;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid red;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.inputbox button svg
+{
+    fill: white;
+    width: 24px;
+}
+
+.list 
+{
+    background-color: white;    
+    width: 400px;
+    padding: 0;    
+    box-sizing: border-box;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.list p
+{
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+ 
+.completado .check
+{
+    display: block;
+}
+
+.completado .uncheck
+{
+    display: none;
+}
+
+.list p:last-child
+{
+    border-bottom: none;
+}
+
+.list p h1
+{
+    flex: 1;
+}
+
+.completado
+{
+    text-decoration: line-through  black;
+}
+
+.list p button
+{
+    border: none;
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+}
+
+.list p button svg
+{
+    width: 24px;
+    height: 24px;
+
+}
+
+svg.delete
+{
+    fill: gray;
+}
+
+#com
+{
+    display: none;  
+    margin-top:  20px;
+    width: 100%;
+    text-align: left;
+}
+
+#inm
+{
+    display: block;
+    margin-top:  20px;
+    width: 100%;
+    text-align: right;
+}
+
+.contador
+{
+    width: 400px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    display: flex;
+    opacity:  .5;
+    font-size: 14px;
+}
+
+.darkmode
+{
+    background-color: rgb(32,32,44);
+    color: white;
+    
+}
+
+.darkmode .inputbox
+{
+    border-color: rgb(227 227 227 / 20%);
+}
+.darkmode .container .inputbox #tarea
+{
+    background-color: rgb(41 41 58);
+    color: #fff;      
+}
+
+.darkmode .container .inputbox #tarea::placeholder
+{
+    color:gray;
+}
+
+.darkmode .list p button svg
+{
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.darkmode svg.delete
+{
+    fill: gray !important;
+}
+
+.darkmode .list p 
+{
+    border-bottom-color:  rgb(57 57 84);
+}
+.darkmode .list
+{
+    background-color: rgb(41 41 58);
+    border-color: rgb(227 227 227 / 20%);
+}
+
+.theme
+{
+    position: fixed;
+    top: 1em;
+    
+}
+
+#buttondark
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 25px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#buttondark:after
+{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100px;
+    display: flex;
+    left: 2px;
+    transition: all ease-in-out .3s;
+}
+
+.darkmode #buttondark:after
+{
+    
+    left: 28px;
+    
+}
+
+.darkmode .container .theme #buttondark
+{
+    background-color: tomato;
+    border: 1px solid rgb(245, 240, 240));
+}
+.container .theme #buttondark
+{
+    background-color:  rgb(201 194 194 / 74%);
+}
+
+.theme .dark
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: none;
+    
+}
+
+.theme .light
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
