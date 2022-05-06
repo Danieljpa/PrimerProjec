@@ -206,7 +206,7 @@ svg.delete
 }
 .darkmode .completado
 {
-    text-decoration: line-through  #fff;
+    text-decoration: line-through  #fff 2px;
 }
 
 .theme

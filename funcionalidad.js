@@ -30,6 +30,7 @@ function guardartarea()
             event.preventDefault();
             button.parentNode.remove();
             ocultar();
+            contar()
         });
         buttoncompletar.addEventListener("click",function()
         {        
@@ -48,7 +49,7 @@ function ocultar()
 {
     let ocultarlist= document.querySelector(".list");
     let p = document.querySelectorAll(".list p");
-    console.log(p);
+    
     if (p.length > 0) 
             ocultarlist.style.display = "flex";
     else     
@@ -67,7 +68,10 @@ function contar()
         a.style.display = "none";
     else     
         a.style.display = "block";
-
+    if (total.length-completado.length == 0) 
+        b.style.display = "none";
+    else     
+        b.style.display = "block";
 } 
   
 let buttondark = document.querySelector("#buttondark");
