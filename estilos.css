@@ -204,6 +204,10 @@ svg.delete
     background-color: rgb(41 41 58);
     border-color: rgb(227 227 227 / 20%);
 }
+.darkmode .completado
+{
+    text-decoration: line-through  #fff;
+}
 
 .theme
 {
